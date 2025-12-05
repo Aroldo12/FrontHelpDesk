@@ -1,0 +1,97 @@
+/* ======== GLOBAL ======== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f3f3f3;
+    justify-content: center;
+}
+
+/* ======== CONTAINER PRINCIPAL ======== */
+.criar-chamado-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ======== CARD / BOX DO FORMULÁRIO ======== */
+.form-box {
+    background: #ffffff;
+    padding: 30px 35px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* ======== INPUTS ======== */
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px 14px;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    resize: none;
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+    border-color: #4c8dff;
+    box-shadow: 0 0 4px rgba(76, 141, 255, 0.5);
+}
+
+/* ======== BOTÃO ======== */
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #4c8dff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-box button:hover {
+    background: #3a74d8;
+}
+
+/* ======== ANIMAÇÃO ======== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 500px) {
+    .form-box {
+        padding: 25px 20px;
+    }
+
+    .form-box h2 {
+        font-size: 20px;
+    }
+}
